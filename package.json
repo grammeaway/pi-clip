@@ -1,0 +1,19 @@
+{
+  "name": "@grammeaway/pi-clip",
+  "version": "1.0.0",
+  "description": "Clipboard snippet picker extension for the Pi agentic harness — /clip copies recent code blocks to the system clipboard, raw",
+  "type": "module",
+  "keywords": ["pi", "pi-extension", "pi-clipboard", "clipboard", "copy", "wl-copy", "pbcopy", "xclip", "pi-package"],
+  "license": "MIT",
+  "author": "Victor Gram Thomsen <victor@guramusoftware.com>",
+  "repository": { "type": "git", "url": "git+https://github.com/grammeaway/pi-clip" },
+  "bugs": { "url": "https://github.com/grammeaway/pi-clip/issues" },
+  "homepage": "https://github.com/grammeaway/pi-clip#readme",
+  "files": ["index.ts", "README.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.79.0"
+  }
+}
