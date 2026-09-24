@@ -43,5 +43,8 @@ which tool copied it and how many characters.
 - **Ring buffer** holds the 30 most recent blocks. Re-seeing an identical
   snippet floats it back to the top rather than duplicating it.
 - **In-memory** — the buffer resets when the session restarts.
+- **Other extensions can add snippets** with
+  `pi.events.emit("clip:snippet", text)`, for example
+  [pi-first-prompt](https://github.com/grammeaway/pi-first-prompt).
 - The buffer is captured per code block, so multi-block messages give you each
   block as a separate, individually-pickable entry.

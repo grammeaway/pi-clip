@@ -80,6 +80,9 @@ export default function clipExtension(pi: ExtensionAPI) {
     for (const b of codeBlocks(textFromContent(e.message.content))) ringPush(b);
   });
 
+  // Other extensions (e.g. pi-first-prompt) can offer snippets: pi.events.emit("clip:snippet", text).
+  pi.events.on("clip:snippet", (text) => typeof text === "string" && ringPush(text));
+
   pi.registerCommand("clip", {
     description: "Pick a recent code block and copy it to the system clipboard",
     handler: async (_args, ctx) => {
