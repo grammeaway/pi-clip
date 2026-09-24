@@ -1,6 +1,6 @@
 {
   "name": "@grammeaway/pi-clip",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Clipboard snippet picker extension for the Pi agentic harness — /clip copies recent code blocks to the system clipboard, raw",
   "type": "module",
   "keywords": ["pi", "pi-extension", "pi-clipboard", "clipboard", "copy", "wl-copy", "pbcopy", "xclip", "pi-package"],
